@@ -36,7 +36,7 @@ public class TransacaoController {
         this.transacaoService = transacaoService;
     }
 
-    @GetMapping()
+    @GetMapping( )
     public ResponseEntity<List<Transacao>> selectAll() {
 
         List<Transacao> listaDeTransacoes = this.transacaoService.findAll();
